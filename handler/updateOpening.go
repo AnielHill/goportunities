@@ -44,7 +44,7 @@ func UpdateOpeningHangler(ctx *gin.Context) {
 	if request.Link != "" {
 		opening.Link = request.Link
 	}
-	if request.Salary != "" {
+	if request.Salary > 0 {
 		opening.Role = request.Role
 	}
 	//Save opening
