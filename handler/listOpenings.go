@@ -7,6 +7,17 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// @BasePath /api/v1
+
+// @Summary List Opening
+// @Description List all job opening
+// @Tags Openings
+// @Accept json
+// @Produce json
+// @Success 200 {object} ListOpeningResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /opening [get]
+
 func ListOpeningHangler(ctx *gin.Context) {
 	openings := []schemas.Opening{}
 
